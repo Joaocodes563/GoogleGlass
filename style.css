@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(_fonts/bubblegum-sans-regular.otf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: black;
+}
+
+div#interface {
+    width: 1000px;
+    background-color: rgb(255, 255, 255);
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+a {
+    color: #413f3f;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabeçalho img#icone {
+    position: absolute;
+    right: 120px;
+    top: 70px;
+
+}
+
+header#cabeçalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url(imagens/glass-logo-peq.jpg) no-repeat 0px 80px;
+}
+
+header#cabeçalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabeçalho h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #888888;
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/* Formatação de imagem com legenda */
+
+figure.foto-legenda {
+    display: inline-block;
+    /* <- ajuda quando tiver problemas com bordas fora da imagem */
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    margin-left: 10px;
+}
+
+figute.foto-legenda img {
+    width: 90%;
+    height: 90%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* Formatação do menu */
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 546px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddd;
+    padding: 10px;
+    margin: 2px;
+    transition: 1s;
+}
+
+nav#menu li:hover {
+    background-color: rgb(87, 85, 85);
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: rgb(255, 255, 255);
+}
+section#corpo {
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #3f3e3e;
+    background-color: #b4b3b3;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+header#cabeçalho-artigo h1 {
+    font-family: 'FonteLogo' ,sans-serif;
+    font-size: 20pt;
+    color: #525050;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+header#cabeçalho-artigo h2 {
+    font-size: 13pt;
+    color: #b4b3b3;
+    background-color: white;
+    margin: 0px;
+}
+header#cabeçalho-artigo h3 {
+    font-size: 12px;
+    color: #525050;
+}
+.direita {
+    text-align: right;
+}
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabelaspec td {
+    border: 1px solid;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+table#tabelaspec td.ce {
+    color: white;
+    background-color: rgb(90, 88, 88);
+    vertical-align: top;
+    font-weight: bold;
+}
+table#tabelaspec td.cd {
+    background-color: #929191;
+}
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 14pt;
+    font-weight: bolder;
+}
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    font-size: 8pt;
+    color: black;
+    margin-top: 10px;
+}
+aside#lateral {
+    display: block;
+    width: 440px;
+    float: right;
+    background-color: #cccaca;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+aside#lateral h1 {
+    margin-top: 0px;
+    font-family: 'FonteLogo',sans-serif;
+    font-size: 20pt;
+    color: #413f3f;
+}
+aside#lateral h2 {
+    background-color: #413f3f;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;
+}
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+}
